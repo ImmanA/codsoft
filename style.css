@@ -1,0 +1,122 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+a
+{
+        text-decoration: none;
+}
+ul
+{
+        list-style: none;
+ }
+li{
+    text-decoration: underline;
+    font-weight: bold ;
+}
+li:hover{
+    color: rgb(49, 22, 186);
+    cursor: pointer;
+}
+.active
+{
+    color: rgba(255, 255, 251, 0.836);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:20px;
+    color: rgb(245, 245, 245);
+    
+
+}
+.nav-li{
+    display: flex; 
+    align-items: center;
+}
+.nav-li li{
+    margin: 0 30px;
+
+
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://i.redd.it/c3uhsgo1vx541.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.one{
+    margin-bottom: 150px;
+    color: rgb(4, 4, 4);
+    text-align: center;
+}
+.one h2{
+    font-size: 4vmin;
+}
+.two{
+    width: 150px;
+    height: 4px;
+    background:orangered;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.one h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.three{
+    padding: 8px 15px;
+    background: blue;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+section
+{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+   text-align: center;
+   font-size: 4vmin;
+   color: black;
+}
+.col{
+     border-color: rgb(5, 115, 210);
+     border-width: 2px;
+     border-style: solid;
+     display: inline-block;
+     width:303px;
+     
+}
+.col:hover{
+    background-color: black;
+    color: white;
+}
+.row{
+    text-align: center;
+}
+.about{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: medium;
+}
+.cont{
+    
+    background-color: black;
+    color: azure;
+    text-align: center;
+    padding-left: 40px;
+}
