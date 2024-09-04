@@ -1,122 +1,59 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
-a
-{
-        text-decoration: none;
-}
-ul
-{
-        list-style: none;
- }
-li{
-    text-decoration: underline;
-    font-weight: bold ;
-}
-li:hover{
-    color: rgb(49, 22, 186);
-    cursor: pointer;
-}
-.active
-{
-    color: rgba(255, 255, 251, 0.836);
-    text-decoration: underline;
-    font-weight: bold;
-}
-.navbar{
-    position:absolute;
-    top:0;
-    left:0;
+body{
+    margin-top: 5%;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding:20px;
-    color: rgb(245, 245, 245);
-    
-
-}
-.nav-li{
-    display: flex; 
-    align-items: center;
-}
-.nav-li li{
-    margin: 0 30px;
-
-
-}
-header{
-    width: 100vw;
-    height: 100vh;
-    background-image: url('https://i.redd.it/c3uhsgo1vx541.jpg');
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(197, 85%, 42%);
 }
-.one{
-    margin-bottom: 150px;
-    color: rgb(4, 4, 4);
-    text-align: center;
+
+#calculator{
+    font-family:Arial,sans-serif;
+    background-color: hsl(0,0%,15%);
+    border-radius: 15px;
+    max-width:500px;
+    overflow: hidden;
 }
-.one h2{
-    font-size: 4vmin;
+#display{
+   width:100%;
+   padding: 20px;
+   font-size:5rem;
+   text-align: left;
+   border: none;
+   background-color: hsl(0,0%,20%);
+   color: azure;
 }
-.two{
-    width: 150px;
-    height: 4px;
-    background:orangered;
-    margin: 10px auto;
-    border-radius: 5px;
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    padding:25px;
 }
-.one h1{
-    font-size: 7vmin;
-    margin-top: 50px;
-    margin-bottom: 30px;
+
+button{
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    border:none;
+    background-color: hsl(0,0%,30%);
+    color:white;
+    font-size: 3rem;
+    font-weight:bold;
+    cursor:pointer;
 }
-.three{
-    padding: 8px 15px;
-    background: blue;
-    border-radius: 30px;
-    color: whitesmoke;
+button:hover{
+    background-color: hsl(0,0%,40%);
 }
-section
+button:active{
+    background-color: hsl(0,0%,50%);
+}
+.operator-btn
 {
-    width: 80%;
-    margin: 80px auto;
+    background-color: hsl(35,100%,50%);
 }
-.title{
-   text-align: center;
-   font-size: 4vmin;
-   color: black;
+.operator-btn:hover{
+  background-color: hsl(35,100%,65%);
 }
-.col{
-     border-color: rgb(5, 115, 210);
-     border-width: 2px;
-     border-style: solid;
-     display: inline-block;
-     width:303px;
-     
-}
-.col:hover{
-    background-color: black;
-    color: white;
-}
-.row{
-    text-align: center;
-}
-.about{
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    font-size: medium;
-}
-.cont{
-    
-    background-color: black;
-    color: azure;
-    text-align: center;
-    padding-left: 40px;
+.operator-btn:active{
+    background-color: hsl(35,100%,75%);
 }
